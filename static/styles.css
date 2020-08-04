@@ -1,0 +1,72 @@
+h1 {
+  font-family: Arial;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+  color: red;
+  background-color: #99c2ff;
+  margin-top: 0px;
+}
+p {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight:lighter;
+  text-align: center;
+  background-color: #000000;
+  color: #b3b3b3;
+  margin-top: 186px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+form {
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.submit-button {
+  color: white;
+  border-color: green;
+  border-style:solid;
+  background-color: green;
+}
+.accept-button {
+  color: white;
+  border-color: rgb(0, 77, 128);
+  border-style:solid;
+  background-color: rgb(0, 77, 128);
+}
+.reject-button {
+  /* margin-left: 625px;  */
+  color: white;
+  border-color: rgb(123, 126, 123);
+  border-style:solid;
+  background-color: rgb(123, 126, 123);
+}
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background-color:#666;
+}
+
+td {
+  padding:20px;
+  min-width: 50px;
+  white-space: nowrap;
+}
+table{
+  border-style: solid;
+  border-collapse:collapse;
+  border-color: black;
+  text-align: center;
+  margin-left: 258px
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arjun's Residency Appointment System</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+<h1><img src="static\mylogo1.png"height="60" width="60">Arjun's Residency Appointment System</h1><br>
+<form id="form">
+  <label for="name">Full Name:</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="date">Date:</label>
+  <input type="text" id="date" name="date"><br>
+  <label for="time">Time:</label>
+  <input type="text" id="Time" name="Time"><br>
+  <input type="submit" value="submit"><br>
+</form>
+<script>
+var form = document.getElementById('form')
+form.onsubmit = function(e) {
+  e.preventDefault();
+  console.log("hi");
+  form.reset();
+};
+
+</script>
+<p>For more info contact us<br>
+Email:- 08bishtarjun@gmail.com<br>
+Phone Number:- 9808381754, 7055996797.</p>
+</body>
+</html>
