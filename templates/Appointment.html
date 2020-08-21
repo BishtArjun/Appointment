@@ -3,16 +3,16 @@
 <head>
 <title>Arjun's Residency Appointment System</title>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="static\style.css">
+<link rel="stylesheet" href="static/css/style.css">
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-	<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+	<script src="static/js/form.js"></script>
 </head>
 <body>
-<h1><img src="static\mylogo1.png"height="60" width="60">Arjun's Residency Appointment System</h1><br>
+<h1><img src="static/img/mylogo1.png"height="60" width="60">Arjun's Residency Appointment System</h1><br>
 <form id="form">
   <label for="name">Full Name:</label>
   <input type="text" id="name" name="name"><br>
@@ -20,14 +20,15 @@
   <input type="text" id="date" name="date"><br>
   <label for="time">Time:</label>
   <input type="text" id="Time" name="Time"><br>
-  <input type="submit" value="submit"<br>
+  <input type="submit" value="submit"><br>
 </form>
 <script>
 var form = document.getElementById('form')
 form.onsubmit = function(e) {
   e.preventDefault();
   console.log("hi");
-  form.reset();
+  // form.reset(); reset form must be done after everything else finished .. otherwise data is deleted
+  // you can do it inside `.done` of the ajax call
 };
 
 </script>

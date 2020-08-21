@@ -16,17 +16,15 @@ def thankyou():
 
 @app.route('/process', methods=['POST'])
 def process():
+	data = request.json  ## find out why this is request.json, and not request.form 
+	name = data['name']
+	date = data['date']
+	print('data from webpage =', name, date)
 
-	name = request.form['name']
-	date = request.form['date']
 
-	if name and email:
-		newName = Name
+	return '' # we have to return thank you html page here
 
-		return jsonify({'name' : newName})
-
-	return jsonify({'error' : 'Missing data!'})
-
+	
 
 if __name__ == "__main__":
     app.run(debug=True)
